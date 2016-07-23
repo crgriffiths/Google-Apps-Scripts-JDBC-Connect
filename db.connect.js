@@ -7,7 +7,7 @@ function sqlConnect() {
   var rowsRange = numSsRows - 1; //Number of rows for export, removing column header from count
   
   //cache values of status data range for export
-  var range = statusSheet.getRange("A2:V" + numSsRows).getValues();
+  var range = statusSheet.getRange("A2:E" + numSsRows).getValues();
     
   // jdbc connect variables
   var address = '192.168.0.1'; //IP of your external database
